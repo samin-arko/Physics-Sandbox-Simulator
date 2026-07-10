@@ -1,0 +1,8 @@
+[
+{
+  "directory": "C:/Users/USER/Documents/PhysicsEngine/build",
+  "command": "c:\\raylib\\w64devkit\\bin\\ccache-g++.exe -IC:/raylib/raylib/src -g -std=gnu++17 -o CMakeFiles\\RaylibPhysicsSimulator.dir\\main.cpp.obj -c C:\\Users\\USER\\Documents\\PhysicsEngine\\main.cpp",
+  "file": "C:/Users/USER/Documents/PhysicsEngine/main.cpp",
+  "output": "C:/Users/USER/Documents/PhysicsEngine/build/CMakeFiles/RaylibPhysicsSimulator.dir/main.cpp.obj"
+}
+]

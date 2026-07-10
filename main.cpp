@@ -11,28 +11,52 @@ struct BallObject
     Color color;
 };
 
+enum editorModes
+{
+    MODE_DEFAULT,
+    MODE_CIRCLE_BRUSH,
+
+    TOTAL_MODES
+};
+
 int main(void)
 {
     int windowWidth = 1820;
     int windowHeight = 980;
     bool isPlaying = false;
-    float editorRadius = 1;
+    float editorRadius = 20.0f;
     int editorMode = 0;
 
-    InitWindow(windowWidth, windowHeight, "RayLib Physics Engine");
+    int currentMode = MODE_DEFAULT;
+
+    InitWindow(windowWidth, windowHeight, "RayLib Physics Sandbox");
 
     SetTargetFPS(60);
 
     std::vector<BallObject> BallList;
     Rectangle playButton = {680, 20, 100, 40};
     Color buttonColor = GREEN;
+
     while (!WindowShouldClose()) // Detect window close button or ESC key (Main Game Loop)
     {
+        // -------------------------------------------------------------------
+        //  INPUT, STATE & LOGIC
+        // -------------------------------------------------------------------
         int FPS = GetFPS();
-
         Vector2 mousePos = GetMousePosition();
-        editorRadius = editorRadius + GetMouseWheelMove();
         bool mouseOverButton = CheckCollisionPointRec(mousePos, playButton);
+
+        // Toggle Editor Mode (TAB Key)
+        if (IsKeyPressed(KEY_TAB))
+        {
+            currentMode++;
+            if (currentMode >= TOTAL_MODES)
+            {
+                currentMode = 0;
+            }
+        }
+
+        // Play Button Logic
         if (mouseOverButton)
         {
             if (IsMouseButtonReleased(MOUSE_BUTTON_LEFT))
@@ -50,21 +74,36 @@ int main(void)
             }
         }
 
-        if (isPlaying == false)
+        if (currentMode == MODE_CIRCLE_BRUSH)
         {
-            if (IsMouseButtonReleased(MOUSE_BUTTON_RIGHT))
-            {
-                BallObject newBall;
-                newBall.x = mousePos.x;
-                newBall.y = mousePos.y;
-                newBall.velocityX = GetRandomValue(-3, 3); // Random horizontal direction
-                newBall.velocityY = GetRandomValue(-3, 3); // Random vertical direction
-                newBall.radius = editorRadius;             // Random size
-                newBall.color = (Color){GetRandomValue(50, 255), GetRandomValue(50, 255), GetRandomValue(50, 255), 255};
+            editorRadius = editorRadius + GetMouseWheelMove();
 
-                BallList.push_back(newBall);
+            if (editorRadius < 5.0f)
+            {
+                editorRadius = 5.0f;
+            }
+            if (editorRadius > 300.0f)
+            {
+                editorRadius = 300.0f;
+            }
+
+            if (isPlaying == false)
+            {
+                if (IsMouseButtonReleased(MOUSE_BUTTON_RIGHT))
+                {
+                    BallObject newBall;
+                    newBall.x = mousePos.x;
+                    newBall.y = mousePos.y;
+                    newBall.velocityX = GetRandomValue(-3, 3); // Random horizontal direction
+                    newBall.velocityY = GetRandomValue(-3, 3); // Random vertical direction
+                    newBall.radius = editorRadius;             // Random size
+                    newBall.color = (Color){GetRandomValue(50, 255), GetRandomValue(50, 255), GetRandomValue(50, 255), 255};
+
+                    BallList.push_back(newBall);
+                }
             }
         }
+
         BeginDrawing();
         ClearBackground(BLACK);
         for (size_t i = 0; i < BallList.size(); i++)
@@ -78,7 +117,16 @@ int main(void)
         DrawRectangleRec(playButton, buttonColor);
 
         Vector2 EditormousePos = GetMousePosition();
-        DrawCircleLines(EditormousePos.x, EditormousePos.y, editorRadius, WHITE);
+        if (currentMode == MODE_DEFAULT)
+        {
+            DrawText("Mode: Default Cursor (TAB to switch)", 20, 45, 15, GRAY);
+        }
+        else if (currentMode == MODE_CIRCLE_BRUSH)
+        {
+            DrawCircleLines(EditormousePos.x, EditormousePos.y, editorRadius, WHITE);
+            DrawText("Mode: Circle Brush (Scroll to size, Right-Click to create circular objects)", 20, 45, 15, LIGHTGRAY);
+        }
+
         EndDrawing();
     }
 

@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: RaylibPhysicsSimulator
+# Project: PhysicsSandboxSimulator
 # Configurations: Debug
 # =============================================================================
 
@@ -41,43 +41,60 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = C$:/Users/USER/Documents/PhysicsEngine/build/
 # =============================================================================
-# Object build statements for EXECUTABLE target RaylibPhysicsSimulator
+# Object build statements for EXECUTABLE target PhysicsSandboxSimulator
 
 
 #############################################
-# Order-only phony target for RaylibPhysicsSimulator
+# Order-only phony target for PhysicsSandboxSimulator
 
-build cmake_object_order_depends_target_RaylibPhysicsSimulator: phony || .
+build cmake_object_order_depends_target_PhysicsSandboxSimulator: phony || .
 
-build CMakeFiles/RaylibPhysicsSimulator.dir/main.cpp.obj: CXX_COMPILER__RaylibPhysicsSimulator_unscanned_Debug C$:/Users/USER/Documents/PhysicsEngine/main.cpp || cmake_object_order_depends_target_RaylibPhysicsSimulator
+build CMakeFiles/PhysicsSandboxSimulator.dir/src/main.cpp.obj: CXX_COMPILER__PhysicsSandboxSimulator_unscanned_Debug C$:/Users/USER/Documents/PhysicsEngine/src/main.cpp || cmake_object_order_depends_target_PhysicsSandboxSimulator
   CONFIG = Debug
-  DEP_FILE = CMakeFiles\RaylibPhysicsSimulator.dir\main.cpp.obj.d
+  DEP_FILE = CMakeFiles\PhysicsSandboxSimulator.dir\src\main.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -IC:/raylib/raylib/src
-  OBJECT_DIR = CMakeFiles\RaylibPhysicsSimulator.dir
-  OBJECT_FILE_DIR = CMakeFiles\RaylibPhysicsSimulator.dir
-  TARGET_SUPPORT_DIR = CMakeFiles\RaylibPhysicsSimulator.dir
+  INCLUDES = -IC:/Users/USER/Documents/PhysicsEngine/include -IC:/raylib/raylib/src
+  OBJECT_DIR = CMakeFiles\PhysicsSandboxSimulator.dir
+  OBJECT_FILE_DIR = CMakeFiles\PhysicsSandboxSimulator.dir\src
+  TARGET_SUPPORT_DIR = CMakeFiles\PhysicsSandboxSimulator.dir
+
+build CMakeFiles/PhysicsSandboxSimulator.dir/src/physics.cpp.obj: CXX_COMPILER__PhysicsSandboxSimulator_unscanned_Debug C$:/Users/USER/Documents/PhysicsEngine/src/physics.cpp || cmake_object_order_depends_target_PhysicsSandboxSimulator
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\PhysicsSandboxSimulator.dir\src\physics.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -IC:/Users/USER/Documents/PhysicsEngine/include -IC:/raylib/raylib/src
+  OBJECT_DIR = CMakeFiles\PhysicsSandboxSimulator.dir
+  OBJECT_FILE_DIR = CMakeFiles\PhysicsSandboxSimulator.dir\src
+  TARGET_SUPPORT_DIR = CMakeFiles\PhysicsSandboxSimulator.dir
+
+build CMakeFiles/PhysicsSandboxSimulator.dir/src/editor.cpp.obj: CXX_COMPILER__PhysicsSandboxSimulator_unscanned_Debug C$:/Users/USER/Documents/PhysicsEngine/src/editor.cpp || cmake_object_order_depends_target_PhysicsSandboxSimulator
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\PhysicsSandboxSimulator.dir\src\editor.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -IC:/Users/USER/Documents/PhysicsEngine/include -IC:/raylib/raylib/src
+  OBJECT_DIR = CMakeFiles\PhysicsSandboxSimulator.dir
+  OBJECT_FILE_DIR = CMakeFiles\PhysicsSandboxSimulator.dir\src
+  TARGET_SUPPORT_DIR = CMakeFiles\PhysicsSandboxSimulator.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target RaylibPhysicsSimulator
+# Link build statements for EXECUTABLE target PhysicsSandboxSimulator
 
 
 #############################################
-# Link the executable RaylibPhysicsSimulator.exe
+# Link the executable PhysicsSandboxSimulator.exe
 
-build RaylibPhysicsSimulator.exe: CXX_EXECUTABLE_LINKER__RaylibPhysicsSimulator_Debug CMakeFiles/RaylibPhysicsSimulator.dir/main.cpp.obj
+build PhysicsSandboxSimulator.exe: CXX_EXECUTABLE_LINKER__PhysicsSandboxSimulator_Debug CMakeFiles/PhysicsSandboxSimulator.dir/src/main.cpp.obj CMakeFiles/PhysicsSandboxSimulator.dir/src/physics.cpp.obj CMakeFiles/PhysicsSandboxSimulator.dir/src/editor.cpp.obj | C$:/raylib/raylib/src/libraylib.a
   CONFIG = Debug
   FLAGS = -g
-  LINK_LIBRARIES = -lraylib  -lopengl32  -lgdi32  -lwinmm  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  LINK_PATH = -LC:/raylib/raylib/src
-  OBJECT_DIR = CMakeFiles\RaylibPhysicsSimulator.dir
+  LINK_LIBRARIES = C:/raylib/raylib/src/libraylib.a  -lwinmm  -lgdi32  -lopengl32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\PhysicsSandboxSimulator.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = RaylibPhysicsSimulator.exe
-  TARGET_IMPLIB = libRaylibPhysicsSimulator.dll.a
-  TARGET_PDB = RaylibPhysicsSimulator.exe.dbg
-  TARGET_SUPPORT_DIR = CMakeFiles\RaylibPhysicsSimulator.dir
+  TARGET_FILE = PhysicsSandboxSimulator.exe
+  TARGET_IMPLIB = libPhysicsSandboxSimulator.dll.a
+  TARGET_PDB = PhysicsSandboxSimulator.exe.dbg
+  TARGET_SUPPORT_DIR = CMakeFiles\PhysicsSandboxSimulator.dir
 
 
 #############################################
@@ -106,7 +123,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build RaylibPhysicsSimulator: phony RaylibPhysicsSimulator.exe
+build PhysicsSandboxSimulator: phony PhysicsSandboxSimulator.exe
 
 # =============================================================================
 # Folder targets.
@@ -116,7 +133,7 @@ build RaylibPhysicsSimulator: phony RaylibPhysicsSimulator.exe
 #############################################
 # Folder: C:/Users/USER/Documents/PhysicsEngine/build
 
-build all: phony RaylibPhysicsSimulator.exe
+build all: phony PhysicsSandboxSimulator.exe
 
 # =============================================================================
 # Built-in targets

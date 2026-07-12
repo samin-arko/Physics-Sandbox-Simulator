@@ -1,8 +1,20 @@
 [
 {
   "directory": "C:/Users/USER/Documents/PhysicsEngine/build",
-  "command": "c:\\raylib\\w64devkit\\bin\\ccache-g++.exe -IC:/raylib/raylib/src -g -std=gnu++17 -o CMakeFiles\\RaylibPhysicsSimulator.dir\\main.cpp.obj -c C:\\Users\\USER\\Documents\\PhysicsEngine\\main.cpp",
-  "file": "C:/Users/USER/Documents/PhysicsEngine/main.cpp",
-  "output": "C:/Users/USER/Documents/PhysicsEngine/build/CMakeFiles/RaylibPhysicsSimulator.dir/main.cpp.obj"
+  "command": "c:\\raylib\\w64devkit\\bin\\ccache-g++.exe -IC:/Users/USER/Documents/PhysicsEngine/include -IC:/raylib/raylib/src -g -std=gnu++17 -o CMakeFiles\\PhysicsSandboxSimulator.dir\\src\\main.cpp.obj -c C:\\Users\\USER\\Documents\\PhysicsEngine\\src\\main.cpp",
+  "file": "C:/Users/USER/Documents/PhysicsEngine/src/main.cpp",
+  "output": "C:/Users/USER/Documents/PhysicsEngine/build/CMakeFiles/PhysicsSandboxSimulator.dir/src/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/USER/Documents/PhysicsEngine/build",
+  "command": "c:\\raylib\\w64devkit\\bin\\ccache-g++.exe -IC:/Users/USER/Documents/PhysicsEngine/include -IC:/raylib/raylib/src -g -std=gnu++17 -o CMakeFiles\\PhysicsSandboxSimulator.dir\\src\\physics.cpp.obj -c C:\\Users\\USER\\Documents\\PhysicsEngine\\src\\physics.cpp",
+  "file": "C:/Users/USER/Documents/PhysicsEngine/src/physics.cpp",
+  "output": "C:/Users/USER/Documents/PhysicsEngine/build/CMakeFiles/PhysicsSandboxSimulator.dir/src/physics.cpp.obj"
+},
+{
+  "directory": "C:/Users/USER/Documents/PhysicsEngine/build",
+  "command": "c:\\raylib\\w64devkit\\bin\\ccache-g++.exe -IC:/Users/USER/Documents/PhysicsEngine/include -IC:/raylib/raylib/src -g -std=gnu++17 -o CMakeFiles\\PhysicsSandboxSimulator.dir\\src\\editor.cpp.obj -c C:\\Users\\USER\\Documents\\PhysicsEngine\\src\\editor.cpp",
+  "file": "C:/Users/USER/Documents/PhysicsEngine/src/editor.cpp",
+  "output": "C:/Users/USER/Documents/PhysicsEngine/build/CMakeFiles/PhysicsSandboxSimulator.dir/src/editor.cpp.obj"
 }
 ]

@@ -1,8 +1,10 @@
 #include "raylib.h"
+#include "rlImGui.h"
 #include "config.h"
 #include "editor.h"
 #include "physics.h"
 #include <vector>
+#include <math.h>
 
 int main(void)
 {
@@ -13,15 +15,13 @@ int main(void)
     config.editorRadius = 20.0f;
     config.editorMode = 0;
     config.currentMode = MODE_DEFAULT;
-    config.playbuttonColor = GREEN;
     config.BallList;
+
+    SetConfigFlags(FLAG_MSAA_4X_HINT);
 
     InitWindow(config.windowWidth, config.windowHeight, "RayLib Physics Sandbox");
 
     SetTargetFPS(60);
-
-    Rectangle playButton = {680, 20, 100, 40};
-    Color buttonColor = GREEN;
 
     while (!WindowShouldClose()) // Detect window close button or ESC key (Main Game Loop)
     {
@@ -29,10 +29,8 @@ int main(void)
         //  INPUT, STATE & LOGIC
         // -------------------------------------------------------------------
         int FPS = GetFPS();
+        float dt = GetFrameTime();
         Vector2 mousePos = GetMousePosition();
-        bool mouseOverButton = CheckCollisionPointRec(mousePos, playButton);
-
-        HandleEditorChanges(config, mouseOverButton);
         if (spawnBall(config))
         {
             BallObject newBall;
@@ -45,32 +43,28 @@ int main(void)
 
             config.BallList.push_back(newBall);
         }
+        if (config.isPlaying == true)
+        {
+            UpdatePhysics(config, dt);
+        }
+        // -------------------------------------------------------------------
+        //  Begin Drawing
+        // -------------------------------------------------------------------
 
         BeginDrawing();
         ClearBackground(BLACK);
-        if (config.isPlaying == true)
-        {
-            UpdatePhysics(config);
-        }
+
+        UpdateEditorState(config, FPS);
+
         for (size_t i = 0; i < config.BallList.size(); i++)
         {
             DrawCircle(config.BallList[i].x, config.BallList[i].y, config.BallList[i].radius, config.BallList[i].color);
         }
 
-        // DrawText(TextFormat("FPS: %i", FPS), (windowWidth / 45), (windowHeight / 35), 15, WHITE);
-        DrawText(TextFormat("FPS: %i", FPS), 20, 20, 15, WHITE);
-
-        DrawRectangleRec(playButton, config.playbuttonColor);
-
-        Vector2 EditormousePos = GetMousePosition();
-        if (config.currentMode == MODE_DEFAULT)
+        if (config.currentMode == MODE_CIRCLE_BRUSH)
         {
-            DrawText("Mode: Default Cursor (TAB to switch)", 20, 45, 15, GRAY);
-        }
-        else if (config.currentMode == MODE_CIRCLE_BRUSH)
-        {
+            Vector2 EditormousePos = GetMousePosition();
             DrawCircleLines(EditormousePos.x, EditormousePos.y, config.editorRadius, WHITE);
-            DrawText("Mode: Circle Brush (Scroll to size, Right-Click to create circular objects)", 20, 45, 15, LIGHTGRAY);
         }
 
         EndDrawing();

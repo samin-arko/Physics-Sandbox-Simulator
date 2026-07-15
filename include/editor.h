@@ -10,5 +10,5 @@ enum editorModes
     TOTAL_MODES
 };
 
-void HandleEditorChanges(EngineState &config, bool &mouseOverButton);
+void UpdateEditorState(EngineState &config, int FPS);
 bool spawnBall(EngineState &config);

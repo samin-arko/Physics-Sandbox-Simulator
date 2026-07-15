@@ -53,7 +53,7 @@ build CMakeFiles/PhysicsSandboxSimulator.dir/src/main.cpp.obj: CXX_COMPILER__Phy
   CONFIG = Debug
   DEP_FILE = CMakeFiles\PhysicsSandboxSimulator.dir\src\main.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -IC:/Users/USER/Documents/PhysicsEngine/include -IC:/raylib/raylib/src
+  INCLUDES = -IC:/Users/USER/Documents/PhysicsEngine/include -IC:/Users/USER/Documents/PhysicsEngine/external/imgui -IC:/raylib/raylib/src
   OBJECT_DIR = CMakeFiles\PhysicsSandboxSimulator.dir
   OBJECT_FILE_DIR = CMakeFiles\PhysicsSandboxSimulator.dir\src
   TARGET_SUPPORT_DIR = CMakeFiles\PhysicsSandboxSimulator.dir
@@ -62,7 +62,7 @@ build CMakeFiles/PhysicsSandboxSimulator.dir/src/physics.cpp.obj: CXX_COMPILER__
   CONFIG = Debug
   DEP_FILE = CMakeFiles\PhysicsSandboxSimulator.dir\src\physics.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -IC:/Users/USER/Documents/PhysicsEngine/include -IC:/raylib/raylib/src
+  INCLUDES = -IC:/Users/USER/Documents/PhysicsEngine/include -IC:/Users/USER/Documents/PhysicsEngine/external/imgui -IC:/raylib/raylib/src
   OBJECT_DIR = CMakeFiles\PhysicsSandboxSimulator.dir
   OBJECT_FILE_DIR = CMakeFiles\PhysicsSandboxSimulator.dir\src
   TARGET_SUPPORT_DIR = CMakeFiles\PhysicsSandboxSimulator.dir
@@ -71,9 +71,54 @@ build CMakeFiles/PhysicsSandboxSimulator.dir/src/editor.cpp.obj: CXX_COMPILER__P
   CONFIG = Debug
   DEP_FILE = CMakeFiles\PhysicsSandboxSimulator.dir\src\editor.cpp.obj.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -IC:/Users/USER/Documents/PhysicsEngine/include -IC:/raylib/raylib/src
+  INCLUDES = -IC:/Users/USER/Documents/PhysicsEngine/include -IC:/Users/USER/Documents/PhysicsEngine/external/imgui -IC:/raylib/raylib/src
   OBJECT_DIR = CMakeFiles\PhysicsSandboxSimulator.dir
   OBJECT_FILE_DIR = CMakeFiles\PhysicsSandboxSimulator.dir\src
+  TARGET_SUPPORT_DIR = CMakeFiles\PhysicsSandboxSimulator.dir
+
+build CMakeFiles/PhysicsSandboxSimulator.dir/external/imgui/imgui.cpp.obj: CXX_COMPILER__PhysicsSandboxSimulator_unscanned_Debug C$:/Users/USER/Documents/PhysicsEngine/external/imgui/imgui.cpp || cmake_object_order_depends_target_PhysicsSandboxSimulator
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\PhysicsSandboxSimulator.dir\external\imgui\imgui.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -IC:/Users/USER/Documents/PhysicsEngine/include -IC:/Users/USER/Documents/PhysicsEngine/external/imgui -IC:/raylib/raylib/src
+  OBJECT_DIR = CMakeFiles\PhysicsSandboxSimulator.dir
+  OBJECT_FILE_DIR = CMakeFiles\PhysicsSandboxSimulator.dir\external\imgui
+  TARGET_SUPPORT_DIR = CMakeFiles\PhysicsSandboxSimulator.dir
+
+build CMakeFiles/PhysicsSandboxSimulator.dir/external/imgui/imgui_draw.cpp.obj: CXX_COMPILER__PhysicsSandboxSimulator_unscanned_Debug C$:/Users/USER/Documents/PhysicsEngine/external/imgui/imgui_draw.cpp || cmake_object_order_depends_target_PhysicsSandboxSimulator
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\PhysicsSandboxSimulator.dir\external\imgui\imgui_draw.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -IC:/Users/USER/Documents/PhysicsEngine/include -IC:/Users/USER/Documents/PhysicsEngine/external/imgui -IC:/raylib/raylib/src
+  OBJECT_DIR = CMakeFiles\PhysicsSandboxSimulator.dir
+  OBJECT_FILE_DIR = CMakeFiles\PhysicsSandboxSimulator.dir\external\imgui
+  TARGET_SUPPORT_DIR = CMakeFiles\PhysicsSandboxSimulator.dir
+
+build CMakeFiles/PhysicsSandboxSimulator.dir/external/imgui/imgui_widgets.cpp.obj: CXX_COMPILER__PhysicsSandboxSimulator_unscanned_Debug C$:/Users/USER/Documents/PhysicsEngine/external/imgui/imgui_widgets.cpp || cmake_object_order_depends_target_PhysicsSandboxSimulator
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\PhysicsSandboxSimulator.dir\external\imgui\imgui_widgets.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -IC:/Users/USER/Documents/PhysicsEngine/include -IC:/Users/USER/Documents/PhysicsEngine/external/imgui -IC:/raylib/raylib/src
+  OBJECT_DIR = CMakeFiles\PhysicsSandboxSimulator.dir
+  OBJECT_FILE_DIR = CMakeFiles\PhysicsSandboxSimulator.dir\external\imgui
+  TARGET_SUPPORT_DIR = CMakeFiles\PhysicsSandboxSimulator.dir
+
+build CMakeFiles/PhysicsSandboxSimulator.dir/external/imgui/imgui_tables.cpp.obj: CXX_COMPILER__PhysicsSandboxSimulator_unscanned_Debug C$:/Users/USER/Documents/PhysicsEngine/external/imgui/imgui_tables.cpp || cmake_object_order_depends_target_PhysicsSandboxSimulator
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\PhysicsSandboxSimulator.dir\external\imgui\imgui_tables.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -IC:/Users/USER/Documents/PhysicsEngine/include -IC:/Users/USER/Documents/PhysicsEngine/external/imgui -IC:/raylib/raylib/src
+  OBJECT_DIR = CMakeFiles\PhysicsSandboxSimulator.dir
+  OBJECT_FILE_DIR = CMakeFiles\PhysicsSandboxSimulator.dir\external\imgui
+  TARGET_SUPPORT_DIR = CMakeFiles\PhysicsSandboxSimulator.dir
+
+build CMakeFiles/PhysicsSandboxSimulator.dir/external/imgui/rlImGui.cpp.obj: CXX_COMPILER__PhysicsSandboxSimulator_unscanned_Debug C$:/Users/USER/Documents/PhysicsEngine/external/imgui/rlImGui.cpp || cmake_object_order_depends_target_PhysicsSandboxSimulator
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\PhysicsSandboxSimulator.dir\external\imgui\rlImGui.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -IC:/Users/USER/Documents/PhysicsEngine/include -IC:/Users/USER/Documents/PhysicsEngine/external/imgui -IC:/raylib/raylib/src
+  OBJECT_DIR = CMakeFiles\PhysicsSandboxSimulator.dir
+  OBJECT_FILE_DIR = CMakeFiles\PhysicsSandboxSimulator.dir\external\imgui
   TARGET_SUPPORT_DIR = CMakeFiles\PhysicsSandboxSimulator.dir
 
 
@@ -84,7 +129,7 @@ build CMakeFiles/PhysicsSandboxSimulator.dir/src/editor.cpp.obj: CXX_COMPILER__P
 #############################################
 # Link the executable PhysicsSandboxSimulator.exe
 
-build PhysicsSandboxSimulator.exe: CXX_EXECUTABLE_LINKER__PhysicsSandboxSimulator_Debug CMakeFiles/PhysicsSandboxSimulator.dir/src/main.cpp.obj CMakeFiles/PhysicsSandboxSimulator.dir/src/physics.cpp.obj CMakeFiles/PhysicsSandboxSimulator.dir/src/editor.cpp.obj | C$:/raylib/raylib/src/libraylib.a
+build PhysicsSandboxSimulator.exe: CXX_EXECUTABLE_LINKER__PhysicsSandboxSimulator_Debug CMakeFiles/PhysicsSandboxSimulator.dir/src/main.cpp.obj CMakeFiles/PhysicsSandboxSimulator.dir/src/physics.cpp.obj CMakeFiles/PhysicsSandboxSimulator.dir/src/editor.cpp.obj CMakeFiles/PhysicsSandboxSimulator.dir/external/imgui/imgui.cpp.obj CMakeFiles/PhysicsSandboxSimulator.dir/external/imgui/imgui_draw.cpp.obj CMakeFiles/PhysicsSandboxSimulator.dir/external/imgui/imgui_widgets.cpp.obj CMakeFiles/PhysicsSandboxSimulator.dir/external/imgui/imgui_tables.cpp.obj CMakeFiles/PhysicsSandboxSimulator.dir/external/imgui/rlImGui.cpp.obj | C$:/raylib/raylib/src/libraylib.a
   CONFIG = Debug
   FLAGS = -g
   LINK_LIBRARIES = C:/raylib/raylib/src/libraylib.a  -lwinmm  -lgdi32  -lopengl32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32

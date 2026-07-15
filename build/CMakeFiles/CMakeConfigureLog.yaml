@@ -3326,9 +3326,9 @@ events:
       - "C:/raylib/w64devkit/bin/"
       - "C:/raylib/w64devkit/sbin/"
       - "C:/raylib/w64devkit/"
-      - "C:/Program Files (x86)/RaylibPhysicsSimulator/bin/"
-      - "C:/Program Files (x86)/RaylibPhysicsSimulator/sbin/"
-      - "C:/Program Files (x86)/RaylibPhysicsSimulator/"
+      - "C:/Program Files (x86)/PhysicsSandboxSimulator/bin/"
+      - "C:/Program Files (x86)/PhysicsSandboxSimulator/sbin/"
+      - "C:/Program Files (x86)/PhysicsSandboxSimulator/"
     searched_directories:
       - "C:/raylib/w64devkit/bin/ccache-windres.com"
       - "C:/raylib/w64devkit/bin/ccache-windres.exe"
@@ -3447,15 +3447,15 @@ events:
       - "C:/raylib/w64devkit/ccache-windres.com"
       - "C:/raylib/w64devkit/ccache-windres.exe"
       - "C:/raylib/w64devkit/ccache-windres"
-      - "C:/Program Files (x86)/RaylibPhysicsSimulator/bin/ccache-windres.com"
-      - "C:/Program Files (x86)/RaylibPhysicsSimulator/bin/ccache-windres.exe"
-      - "C:/Program Files (x86)/RaylibPhysicsSimulator/bin/ccache-windres"
-      - "C:/Program Files (x86)/RaylibPhysicsSimulator/sbin/ccache-windres.com"
-      - "C:/Program Files (x86)/RaylibPhysicsSimulator/sbin/ccache-windres.exe"
-      - "C:/Program Files (x86)/RaylibPhysicsSimulator/sbin/ccache-windres"
-      - "C:/Program Files (x86)/RaylibPhysicsSimulator/ccache-windres.com"
-      - "C:/Program Files (x86)/RaylibPhysicsSimulator/ccache-windres.exe"
-      - "C:/Program Files (x86)/RaylibPhysicsSimulator/ccache-windres"
+      - "C:/Program Files (x86)/PhysicsSandboxSimulator/bin/ccache-windres.com"
+      - "C:/Program Files (x86)/PhysicsSandboxSimulator/bin/ccache-windres.exe"
+      - "C:/Program Files (x86)/PhysicsSandboxSimulator/bin/ccache-windres"
+      - "C:/Program Files (x86)/PhysicsSandboxSimulator/sbin/ccache-windres.com"
+      - "C:/Program Files (x86)/PhysicsSandboxSimulator/sbin/ccache-windres.exe"
+      - "C:/Program Files (x86)/PhysicsSandboxSimulator/sbin/ccache-windres"
+      - "C:/Program Files (x86)/PhysicsSandboxSimulator/ccache-windres.com"
+      - "C:/Program Files (x86)/PhysicsSandboxSimulator/ccache-windres.exe"
+      - "C:/Program Files (x86)/PhysicsSandboxSimulator/ccache-windres"
       - "C:/raylib/w64devkit/bin/windres.com"
     found: "C:/raylib/w64devkit/bin/windres.exe"
     search_context:
@@ -3491,12 +3491,12 @@ events:
         - "C:\\Users\\USER\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
         - "C:\\Users\\USER\\AppData\\Local\\spicetify"
         - "C:\\Users\\USER\\AppData\\Roaming\\npm"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/RaylibPhysicsSimulator"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/PhysicsSandboxSimulator"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/raylib/w64devkit"
-        - "C:/Program Files (x86)/RaylibPhysicsSimulator"
+        - "C:/Program Files (x86)/PhysicsSandboxSimulator"
   -
     kind: "try_compile-v1"
     backtrace:
@@ -3506,8 +3506,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/USER/Documents/PhysicsEngine/build/CMakeFiles/CMakeScratch/TryCompile-dj0f41"
-      binary: "C:/Users/USER/Documents/PhysicsEngine/build/CMakeFiles/CMakeScratch/TryCompile-dj0f41"
+      source: "C:/Users/USER/Documents/PhysicsEngine/build/CMakeFiles/CMakeScratch/TryCompile-sqflle"
+      binary: "C:/Users/USER/Documents/PhysicsEngine/build/CMakeFiles/CMakeScratch/TryCompile-sqflle"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -3518,10 +3518,10 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/USER/Documents/PhysicsEngine/build/CMakeFiles/CMakeScratch/TryCompile-dj0f41'
+        Change Dir: 'C:/Users/USER/Documents/PhysicsEngine/build/CMakeFiles/CMakeScratch/TryCompile-sqflle'
         
-        Run Build Command(s): C:/raylib/w64devkit/bin/ninja.exe -v cmTC_ab7e3
-        [1/2] c:\\raylib\\w64devkit\\bin\\ccache-g++.exe   -v -o CMakeFiles/cmTC_ab7e3.dir/CMakeCXXCompilerABI.cpp.obj -c C:/raylib/w64devkit/share/cmake-4.3/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): C:/raylib/w64devkit/bin/ninja.exe -v cmTC_301dd
+        [1/2] c:\\raylib\\w64devkit\\bin\\ccache-g++.exe   -v -o CMakeFiles/cmTC_301dd.dir/CMakeCXXCompilerABI.cpp.obj -c C:/raylib/w64devkit/share/cmake-4.3/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=c:\\raylib\\w64devkit\\bin\\g++.exe
         Target: x86_64-w64-mingw32
@@ -3557,7 +3557,7 @@ events:
         COMPILER_PATH=C:/raylib/w64devkit/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/;C:/raylib/w64devkit/bin/../libexec/gcc/
         LIBRARY_PATH=C:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;C:/raylib/w64devkit/bin/../lib/gcc/;C:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/;C:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../
         COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-c' '-o' 'CMakeFiles/cmTC_ab7e3.dir/CMakeCXXCompilerABI.cpp.obj' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_ab7e3.dir/CMakeCXXCompilerABI.cpp.'
-        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && c:\\raylib\\w64devkit\\bin\\ccache-g++.exe  -v -Wl,-v CMakeFiles/cmTC_ab7e3.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_ab7e3.exe -Wl,--out-implib,libcmTC_ab7e3.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && c:\\raylib\\w64devkit\\bin\\ccache-g++.exe  -v -Wl,-v CMakeFiles/cmTC_301dd.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_301dd.exe -Wl,--out-implib,libcmTC_301dd.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
         Using built-in specs.
         COLLECT_GCC=c:\\raylib\\w64devkit\\bin\\g++.exe
         COLLECT_LTO_WRAPPER=C:/raylib/w64devkit/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe
@@ -3568,12 +3568,12 @@ events:
         gcc version 15.2.0 (GCC) 
         COMPILER_PATH=C:/raylib/w64devkit/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/;C:/raylib/w64devkit/bin/../libexec/gcc/
         LIBRARY_PATH=C:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;C:/raylib/w64devkit/bin/../lib/gcc/;C:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/;C:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ab7e3.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_ab7e3.'
-         C:/raylib/w64devkit/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe --sysroot=C:/raylib/w64devkit/bin/../../w64devkit -m i386pep -Bdynamic -o cmTC_ab7e3.exe C:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/raylib/w64devkit/bin/../lib/gcc -LC:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v CMakeFiles/cmTC_ab7e3.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_ab7e3.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmingwex -lmsvcrt -lkernel32 C:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_301dd.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_301dd.'
+         C:/raylib/w64devkit/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe --sysroot=C:/raylib/w64devkit/bin/../../w64devkit -m i386pep -Bdynamic -o cmTC_301dd.exe C:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/raylib/w64devkit/bin/../lib/gcc -LC:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v CMakeFiles/cmTC_301dd.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_301dd.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmingwex -lmsvcrt -lkernel32 C:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
         collect2 version 15.2.0
-        c:\\raylib\\w64devkit\\bin/ld.exe --sysroot=C:/raylib/w64devkit/bin/../../w64devkit -m i386pep -Bdynamic -o cmTC_ab7e3.exe C:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/raylib/w64devkit/bin/../lib/gcc -LC:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v CMakeFiles/cmTC_ab7e3.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_ab7e3.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmingwex -lmsvcrt -lkernel32 C:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
+        c:\\raylib\\w64devkit\\bin/ld.exe --sysroot=C:/raylib/w64devkit/bin/../../w64devkit -m i386pep -Bdynamic -o cmTC_301dd.exe C:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/raylib/w64devkit/bin/../lib/gcc -LC:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v CMakeFiles/cmTC_301dd.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_301dd.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmingwex -lmsvcrt -lkernel32 C:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
         GNU ld (GNU Binutils) 2.46.0.20260210
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ab7e3.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_ab7e3.'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_301dd.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_301dd.'
         
       exitCode: 0
   -
@@ -3612,10 +3612,10 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: 'C:/Users/USER/Documents/PhysicsEngine/build/CMakeFiles/CMakeScratch/TryCompile-dj0f41']
+        ignore line: [Change Dir: 'C:/Users/USER/Documents/PhysicsEngine/build/CMakeFiles/CMakeScratch/TryCompile-sqflle']
         ignore line: []
-        ignore line: [Run Build Command(s): C:/raylib/w64devkit/bin/ninja.exe -v cmTC_ab7e3]
-        ignore line: [[1/2] c:\\raylib\\w64devkit\\bin\\ccache-g++.exe   -v -o CMakeFiles/cmTC_ab7e3.dir/CMakeCXXCompilerABI.cpp.obj -c C:/raylib/w64devkit/share/cmake-4.3/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): C:/raylib/w64devkit/bin/ninja.exe -v cmTC_301dd]
+        ignore line: [[1/2] c:\\raylib\\w64devkit\\bin\\ccache-g++.exe   -v -o CMakeFiles/cmTC_301dd.dir/CMakeCXXCompilerABI.cpp.obj -c C:/raylib/w64devkit/share/cmake-4.3/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=c:\\raylib\\w64devkit\\bin\\g++.exe]
         ignore line: [Target: x86_64-w64-mingw32]
@@ -3655,7 +3655,7 @@ events:
         ignore line: [C:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/]
         ignore line: [C:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../]
         ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-c' '-o' 'CMakeFiles/cmTC_ab7e3.dir/CMakeCXXCompilerABI.cpp.obj' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_ab7e3.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [[2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && c:\\raylib\\w64devkit\\bin\\ccache-g++.exe  -v -Wl -v CMakeFiles/cmTC_ab7e3.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_ab7e3.exe -Wl --out-implib libcmTC_ab7e3.dll.a -Wl --major-image-version 0 --minor-image-version 0   && cd ."]
+        ignore line: [[2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && c:\\raylib\\w64devkit\\bin\\ccache-g++.exe  -v -Wl -v CMakeFiles/cmTC_301dd.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_301dd.exe -Wl --out-implib libcmTC_301dd.dll.a -Wl --major-image-version 0 --minor-image-version 0   && cd ."]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=c:\\raylib\\w64devkit\\bin\\g++.exe]
         ignore line: [COLLECT_LTO_WRAPPER=C:/raylib/w64devkit/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe]
@@ -3670,15 +3670,15 @@ events:
         ignore line: [C:/raylib/w64devkit/bin/../lib/gcc/]
         ignore line: [C:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/]
         ignore line: [C:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ab7e3.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_ab7e3.']
-        link line: [ C:/raylib/w64devkit/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe --sysroot=C:/raylib/w64devkit/bin/../../w64devkit -m i386pep -Bdynamic -o cmTC_ab7e3.exe C:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/raylib/w64devkit/bin/../lib/gcc -LC:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v CMakeFiles/cmTC_ab7e3.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_ab7e3.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmingwex -lmsvcrt -lkernel32 C:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_301dd.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_301dd.']
+        link line: [ C:/raylib/w64devkit/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe --sysroot=C:/raylib/w64devkit/bin/../../w64devkit -m i386pep -Bdynamic -o cmTC_301dd.exe C:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/raylib/w64devkit/bin/../lib/gcc -LC:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v CMakeFiles/cmTC_301dd.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_301dd.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmingwex -lmsvcrt -lkernel32 C:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
           arg [C:/raylib/w64devkit/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe] ==> ignore
           arg [--sysroot=C:/raylib/w64devkit/bin/../../w64devkit] ==> ignore
           arg [-m] ==> ignore
           arg [i386pep] ==> ignore
           arg [-Bdynamic] ==> search dynamic
           arg [-o] ==> ignore
-          arg [cmTC_ab7e3.exe] ==> ignore
+          arg [cmTC_301dd.exe] ==> ignore
           arg [C:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o] ==> obj [C:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o]
           arg [C:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o] ==> obj [C:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o]
           arg [-LC:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0] ==> dir [C:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0]
@@ -3686,9 +3686,9 @@ events:
           arg [-LC:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib] ==> dir [C:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib]
           arg [-LC:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../..] ==> dir [C:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../..]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_ab7e3.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
+          arg [CMakeFiles/cmTC_301dd.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
           arg [--out-implib] ==> ignore
-          arg [libcmTC_ab7e3.dll.a] ==> ignore
+          arg [libcmTC_301dd.dll.a] ==> ignore
           arg [--major-image-version] ==> ignore
           arg [0] ==> ignore
           arg [--minor-image-version] ==> ignore
@@ -3711,7 +3711,7 @@ events:
           arg [-lkernel32] ==> lib [kernel32]
           arg [C:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o] ==> obj [C:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
         ignore line: [collect2 version 15.2.0]
-        ignore line: [c:\\raylib\\w64devkit\\bin/ld.exe --sysroot=C:/raylib/w64devkit/bin/../../w64devkit -m i386pep -Bdynamic -o cmTC_ab7e3.exe C:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/raylib/w64devkit/bin/../lib/gcc -LC:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v CMakeFiles/cmTC_ab7e3.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_ab7e3.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmingwex -lmsvcrt -lkernel32 C:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
+        ignore line: [c:\\raylib\\w64devkit\\bin/ld.exe --sysroot=C:/raylib/w64devkit/bin/../../w64devkit -m i386pep -Bdynamic -o cmTC_301dd.exe C:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/raylib/w64devkit/bin/../lib/gcc -LC:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v CMakeFiles/cmTC_301dd.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_301dd.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmingwex -lmsvcrt -lkernel32 C:/raylib/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
         linker tool for 'CXX': c:/raylib/w64devkit/bin/ld.exe
         remove lib [msvcrt]
         remove lib [msvcrt]

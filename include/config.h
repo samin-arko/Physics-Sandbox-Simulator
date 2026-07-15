@@ -9,6 +9,7 @@ struct BallObject
     float velocityX;
     float velocityY;
     float radius;
+    int mass;
     Color color;
 };
 
@@ -18,7 +19,6 @@ struct EngineState
     int currentMode;
     float editorRadius;
     int editorMode;
-    Color playbuttonColor;
     int windowWidth;
     int windowHeight;
     std::vector<BallObject> BallList;

@@ -1,36 +1,47 @@
 #include "editor.h"
 
-void HandleEditorChanges(EngineState &config, bool &mouseOverButton)
+void UpdateEditorState(EngineState &config, int FPS)
 {
+
+    DrawText(TextFormat("FPS: %i", FPS), 20, 20, 15, WHITE);
+
     // Toggle Editor Mode (TAB Key)
-    if (IsKeyPressed(KEY_TAB))
+    if (config.isPlaying == false)
     {
-        config.currentMode++;
-        if (config.currentMode >= TOTAL_MODES)
+        if (IsKeyPressed(KEY_TAB))
         {
-            config.currentMode = 0;
+            config.currentMode++;
+            if (config.currentMode >= TOTAL_MODES)
+            {
+                config.currentMode = 0;
+            }
         }
+    }
+    else
+    {
+        config.currentMode = 0;
     }
 
     // Play Button Logic
-    if (mouseOverButton)
+    if (IsKeyReleased(KEY_SPACE))
     {
-        if (IsMouseButtonReleased(MOUSE_BUTTON_LEFT))
-        {
-            if (config.isPlaying == false)
-            {
-                config.isPlaying = true;
-                config.playbuttonColor = RED;
-            }
-            else
-            {
-                config.isPlaying = false;
-                config.playbuttonColor = GREEN;
-            }
-        }
+        config.isPlaying = !config.isPlaying;
     }
 
-    if (config.currentMode == MODE_CIRCLE_BRUSH)
+    if (config.isPlaying == true)
+    {
+        DrawText("Playing", 860, 20, 15, GREEN);
+    }
+    else
+    {
+        DrawText("Not Playing", 850, 20, 15, RED);
+    }
+
+    if (config.currentMode == MODE_DEFAULT)
+    {
+        DrawText("Mode: Default Cursor (TAB to switch)", 20, 45, 15, GRAY);
+    }
+    else if (config.currentMode == MODE_CIRCLE_BRUSH)
     {
         config.editorRadius = config.editorRadius + GetMouseWheelMove() * 1.5f;
 
@@ -42,6 +53,8 @@ void HandleEditorChanges(EngineState &config, bool &mouseOverButton)
         {
             config.editorRadius = 300.0f;
         }
+
+        DrawText("Mode: Circle Brush (Scroll to size, Right-Click to create circular objects)", 20, 45, 15, LIGHTGRAY);
     }
 };
 

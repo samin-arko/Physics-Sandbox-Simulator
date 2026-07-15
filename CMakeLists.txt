@@ -8,11 +8,15 @@ add_executable(${PROJECT_NAME}
     src/main.cpp
     src/physics.cpp
     src/editor.cpp
+    external/imgui/imgui.cpp
+    external/imgui/imgui_draw.cpp
+    external/imgui/imgui_widgets.cpp
+    external/imgui/imgui_tables.cpp
+    external/imgui/rlImGui.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PRIVATE "${PROJECT_SOURCE_DIR}/include")
-
+target_include_directories(${PROJECT_NAME} PRIVATE "external/imgui")
 target_include_directories(${PROJECT_NAME} PRIVATE "C:/raylib/raylib/src")
 target_link_libraries(${PROJECT_NAME} PRIVATE "C:/raylib/raylib/src/libraylib.a")
-
 target_link_libraries(${PROJECT_NAME} PRIVATE winmm gdi32 opengl32)

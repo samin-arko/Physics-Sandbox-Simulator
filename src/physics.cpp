@@ -1,12 +1,12 @@
 #include "physics.h"
 
-void UpdatePhysics(EngineState &config)
+void UpdatePhysics(EngineState &config, float dt)
 {
 
     for (size_t i = 0; i < config.BallList.size(); i++)
     {
-        config.BallList[i].x += config.BallList[i].velocityX * GetFrameTime();
-        config.BallList[i].y += config.BallList[i].velocityY * GetFrameTime();
+        config.BallList[i].x += config.BallList[i].velocityX * dt;
+        config.BallList[i].y += config.BallList[i].velocityY * dt;
     }
     HandleCollision(config.BallList);
 }

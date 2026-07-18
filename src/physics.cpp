@@ -27,6 +27,37 @@ void HandleCollision(std::vector<BallObject> &BallList)
 
             if (squaredDistance <= squaredRadiiSum)
             {
+                float pushFactor = 0.0005f;
+
+                BallList[i].x -= dx * pushFactor;
+                BallList[i].y -= dy * pushFactor;
+
+                BallList[j].x += dx * pushFactor;
+                BallList[j].y += dy * pushFactor;
+
+                float massSum = BallList[i].mass + BallList[j].mass;
+                // first object - i
+                float DotProduct1 = ((BallList[i].velocityX - BallList[j].velocityX) * (BallList[i].x - BallList[j].x) + (BallList[i].velocityY - BallList[j].velocityY) * (BallList[i].y - BallList[j].y));
+                float LineofContact1X = (BallList[i].x - BallList[j].x);
+                float LineofContact1Y = (BallList[i].y - BallList[j].y);
+                float disSqr1 = (LineofContact1X * LineofContact1X) + (LineofContact1Y * LineofContact1Y);
+                float ki = (((2 * BallList[j].mass) / massSum) * DotProduct1 / disSqr1);
+                float NewVelocity1X = BallList[i].velocityX - (ki * LineofContact1X);
+                float NewVelocity1Y = BallList[i].velocityY - (ki * LineofContact1Y);
+
+                // second object - j
+                float DotProduct2 = ((BallList[j].velocityX - BallList[i].velocityX) * (BallList[j].x - BallList[i].x) + (BallList[j].velocityY - BallList[i].velocityY) * (BallList[j].y - BallList[i].y));
+                float LineofContact2X = (BallList[j].x - BallList[i].x);
+                float LineofContact2Y = (BallList[j].y - BallList[i].y);
+                float disSqr2 = (LineofContact2X * LineofContact2X) + (LineofContact2Y * LineofContact2Y);
+                float kj = (((2 * BallList[i].mass) / massSum) * DotProduct2 / disSqr2);
+                float NewVelocity2X = BallList[j].velocityX - (kj * LineofContact2X);
+                float NewVelocity2Y = BallList[j].velocityY - (kj * LineofContact2Y);
+
+                BallList[i].velocityX = NewVelocity1X;
+                BallList[i].velocityY = NewVelocity1Y;
+                BallList[j].velocityX = NewVelocity2X;
+                BallList[j].velocityY = NewVelocity2Y;
             }
         }
     }

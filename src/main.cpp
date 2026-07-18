@@ -1,3 +1,4 @@
+#include "imgui.h"
 #include "raylib.h"
 #include "rlImGui.h"
 #include "config.h"
@@ -36,9 +37,12 @@ int main(void)
             BallObject newBall;
             newBall.x = mousePos.x;
             newBall.y = mousePos.y;
-            newBall.velocityX = GetRandomValue(-5, 5); // Random horizontal direction
-            newBall.velocityY = GetRandomValue(-5, 5); // Random vertical direction
-            newBall.radius = config.editorRadius;      // Random size
+            newBall.velocityX = GetRandomValue(-5, 5);
+            newBall.velocityY = GetRandomValue(-5, 5);
+            newBall.AccelerationX = 0;
+            newBall.AccelerationY = 0;
+            newBall.radius = config.editorRadius;
+            newBall.mass = 7 * newBall.radius * newBall.radius;
             newBall.color = (Color){GetRandomValue(50, 255), GetRandomValue(50, 255), GetRandomValue(50, 255), 255};
 
             config.BallList.push_back(newBall);
@@ -54,8 +58,6 @@ int main(void)
         BeginDrawing();
         ClearBackground(BLACK);
 
-        UpdateEditorState(config, FPS);
-
         for (size_t i = 0; i < config.BallList.size(); i++)
         {
             DrawCircle(config.BallList[i].x, config.BallList[i].y, config.BallList[i].radius, config.BallList[i].color);
@@ -66,6 +68,8 @@ int main(void)
             Vector2 EditormousePos = GetMousePosition();
             DrawCircleLines(EditormousePos.x, EditormousePos.y, config.editorRadius, WHITE);
         }
+
+        UpdateEditorState(config, FPS);
 
         EndDrawing();
     }

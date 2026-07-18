@@ -8,8 +8,10 @@ struct BallObject
     int y;
     float velocityX;
     float velocityY;
+    float AccelerationX;
+    float AccelerationY;
     float radius;
-    int mass;
+    float mass;
     Color color;
 };
 
